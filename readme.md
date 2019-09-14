@@ -1,8 +1,20 @@
 # 前言
 这是一个简单的android的应用，每一个按钮相当于一个功能，有些功能涉及到网络开发，但是这里我我没有将服务器部分的代码上传到github上
+由于插入图片过于繁琐所以请自行到到relese
 # 第一个按钮send-request
 正如字面意思所说android端发一个get请求，能活动服务器端上的数据，因为比较简单就不再演示
 # 第二个按钮next-page
 这是一个滑动冲突简单的解决方式，它是Android开发艺术探索里的一个demo
-![滑动冲突]("E:\gongneg.JPG")
+# 第三个按钮register
+这个就是基于Android与服务器实现的一个简单的Android用户注册功能
+# 第四个按钮camerax
+本来想用camerax来写一个相机功能结果发现至今camerax的版本不稳定容易出现各种问题，因此这个相机是用camera2来实现的，这个相机是改过官方demobug后的camera2
+# 第五个按钮uploadpic
+这是一个上传图片到服务器的功能，期间碰到很多问题
+# 第六个按钮complexview
+自建了一个view布局实现了banner的动态滚动功能
+# 第七个按钮viewapger
+模仿现在的主流app布局采用linearlayout+viewpager+tablayout+fragment+actionbar的混合布局
+
+
 

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="110dp"
+    android:layout_height="115dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/dp_5">
+        <ImageView
+            android:id="@+id/ivPic"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_100"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_add_pic" />
+        <ProgressBar
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_5"
+            android:id="@+id/bg_progressbar"
+            style="@style/AppTheme"
+            android:max="100"
+            android:progress="60"
+            />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/ivdel"
+        android:layout_width="@dimen/dp_25"
+        android:layout_height="@dimen/dp_25"
+        android:src="@drawable/ic_del_pic"
+        android:layout_alignParentRight="true"/>
+</RelativeLayout>

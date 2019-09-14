@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+  <Button
+      android:id="@+id/send_request"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="Send_Request"/>
+  <Button
+      android:id="@+id/next_page"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="next_page"/>
+    <Button
+        android:id="@+id/toregister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="register"/>
+  <Button
+      android:id="@+id/tocamera"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="cameraX"/>
+  <Button
+      android:id="@+id/uploadingpicture"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="uplodepic"/>
+  <Button
+      android:id="@+id/complexview"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="complexview"/>
+  <Button
+      android:id="@+id/viewpager"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="viewpager"/>
+  <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/response_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,2 @@
+# AndroidProject
+这是一个简单android的app，可去release文件夹里的apk下载体验

@@ -8,113 +8,44 @@
     android:id="@+id/decor_content_parent"
     android:orientation="vertical"
     tools:context=".Activity.ViewPagerTest">
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
+  <android.support.design.widget.AppBarLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
 
-        android:background="@color/SaddleBrown"
-        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-        app:popupTheme="@style/Theme.AppCompat.Light">
-        <EditText
-            android:id="@+id/search_bar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="10dp"
-            android:enabled="true"
-            android:gravity="top"
-            android:maxLines="1"
-            android:background="@drawable/shape"
-            android:drawableLeft="@drawable/ic_search" />
-    </android.support.v7.widget.Toolbar>
+      <android.support.v7.widget.Toolbar
+          android:id="@+id/toolbar"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          app:layout_scrollFlags="scroll|enterAlways"
+          android:background="@color/SaddleBrown"
+          android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+          app:popupTheme="@style/Theme.AppCompat.Light">
+          <EditText
+              android:id="@+id/search_bar"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginRight="10dp"
+              android:enabled="true"
+              android:gravity="top"
+              android:maxLines="1"
+              android:background="@drawable/shape"
+              android:drawableLeft="@drawable/ic_search" />
+      </android.support.v7.widget.Toolbar>
+
+  </android.support.design.widget.AppBarLayout>
 
     <android.support.design.widget.TabLayout
         android:id="@+id/tablayouttest"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.8"
-        app:tabBackground="@color/SaddleBrown"/>
+        app:tabBackground="@color/SaddleBrown" />
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpagertest"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="10"/>
+        android:layout_weight="10" />
 
-    <!--<LinearLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="0dp"-->
-        <!--android:layout_weight="1"-->
-        <!--android:background="@color/SaddleBrown"-->
-        <!--android:orientation="horizontal">-->
-        <!--<TextView-->
-            <!--android:id="@+id/find_view"-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_weight="1"-->
-            <!--android:text="发现"-->
-            <!--android:textAlignment="center"-->
-            <!--android:textColor="@color/white"-->
-            <!--android:textStyle="italic"-->
-            <!--android:textSize="25dp"/>-->
-        <!--<TextView-->
-            <!--android:id="@+id/profession_view"-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_weight="1"-->
-            <!--android:text="大师馆"-->
-            <!--android:textAlignment="center"-->
-            <!--android:textColor="@color/white"-->
-            <!--android:textStyle="italic"-->
-            <!--android:textSize="25dp"/>-->
-        <!--<TextView-->
-            <!--android:id="@+id/channel_view"-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_height="match_parent"-->
-            <!--android:layout_weight="1"-->
-            <!--android:text="频道"-->
-            <!--android:textAlignment="center"-->
-            <!--android:textColor="@color/white"-->
-            <!--android:textStyle="italic"-->
-            <!--android:textSize="25dp"/>-->
-    <!--</LinearLayout>-->
-
-    <!--&lt;!&ndash;<android.support.design.widget.TabLayout&ndash;&gt;-->
-    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:id="@+id/tab_layout">&ndash;&gt;-->
-    <!--&lt;!&ndash;<android.support.design.widget.TabItem&ndash;&gt;-->
-    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:text="item1"/>&ndash;&gt;-->
-    <!--&lt;!&ndash;<android.support.design.widget.TabItem&ndash;&gt;-->
-    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:text="item1"/>&ndash;&gt;-->
-    <!--&lt;!&ndash;<android.support.design.widget.TabItem&ndash;&gt;-->
-    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:text="item1"/>&ndash;&gt;-->
-    <!--&lt;!&ndash;</android.support.design.widget.TabLayout>&ndash;&gt;-->
-    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
-    <!--&lt;!&ndash;android:id="@+id/scrollbar"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:layout_height="0dp"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:layout_weight="0.5"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:scaleType="matrix"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:src="@drawable/tap"&ndash;&gt;-->
-    <!--&lt;!&ndash;android:background="@color/SaddleBrown"/>&ndash;&gt;-->
-
-    <!--<android.support.v4.view.ViewPager-->
-        <!--android:id="@+id/viewpager1"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="0dp"-->
-        <!--android:layout_weight="12">-->
-        <!--&lt;!&ndash;<android.support.v4.view.PagerTabStrip&ndash;&gt;-->
-        <!--&lt;!&ndash;android:id="@+id/recomtitle"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:background="@color/SaddleBrown"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
-        <!--&lt;!&ndash;android:layout_height="40dp"></android.support.v4.view.PagerTabStrip>&ndash;&gt;-->
-    <!--</android.support.v4.view.ViewPager>-->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
